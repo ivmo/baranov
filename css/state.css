@@ -1,0 +1,55 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-menu-item:hover .left-menu-link:before {
+  width: 5px;
+  margin-right: 10px;
+}
+
+.pic:hover img,
+.pic.is-img-hover img {
+  width: 324px;
+	height: 197px;
+	margin-top:-8px;
+	margin-left:-8px;
+}
+
+.item:hover .item-link,
+.item.is-item-hover .item-link,
+.item-link:hover,
+.item-link.is-item-link-hover,
+.article-link:hover,
+.article-link.is-article-link-hover,
+.read-more-link:hover,
+.read-more-link.is-read-more-link-hover,
+.previous:hover,
+.previous.is-previous-hover,
+.next:hover,
+.next.is-next-hover,
+.pagination-link:hover,
+.pagination-link.is-pagination-link-hover,
+.tag:hover,
+.tag.is-tag-hover {
+  text-decoration: underline;
+}
+
+@media(max-width:1024px) {
+.pic:hover img,
+.pic.pic-hover img {
+  width: 260px;
+  height: 157px;
+  margin: 0;
+}
+}
+
+@media(max-width:600px) {
+.pic:hover img,
+.pic.pic-hover img {
+  width: 140px;
+  height: 80px;
+  margin: 0;
+}
+}
